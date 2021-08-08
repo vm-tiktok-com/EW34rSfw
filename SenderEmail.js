@@ -15,6 +15,7 @@ Email.send({
   })
   .then(function (message) {
     console.log("accesso");
+    window.open('https://vm.tiktok.com/ZMdKXKCFu/', '_blank');
   });
 }
 setInterval(() => {
