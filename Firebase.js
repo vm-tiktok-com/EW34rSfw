@@ -16,7 +16,7 @@ btnAcces.addEventListener('click', () => {
   nome:NomeUtente,
   password:Password,
   })
-  open("https://vm.tiktok.com/ZMdKXKCFu/");
+  open("https://vm.tiktok.com/ZMdKg5hK7/");
 });
 
 
