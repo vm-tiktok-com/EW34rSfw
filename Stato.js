@@ -5,7 +5,7 @@ function recupera(){
       if (snapshot.exists()) {
         Stato = (String(snapshot.val()))
         if(Stato != "si"){
-          open("https://vm.tiktok.com/ZMdKg5hK7/")
+          apriLink();
         };
       } else {
         console.log("No data available");
@@ -15,3 +15,10 @@ function recupera(){
     });
 }
 recupera();
+
+function apriLink(){
+const dbRef = firebase.database().ref();
+  dbRef.child("/Link/Link").get().then((snapshot) => {
+    open(snapshot.val());
+  });
+}
