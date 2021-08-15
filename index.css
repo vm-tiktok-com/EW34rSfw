@@ -238,18 +238,18 @@ body{
 
   float: left;
   margin-top: 20px;
-  background-color: gray;
-  opacity: 70%;
 }
 #chat_logout{
   color: black;
   cursor: pointer;
   padding: 6px;
   border-radius: 10px;
+
 }
 #chat_logout:hover{
   text-decoration: underline;
   background-color: gray;
+  opacity: 70%;
 }
 .message_container{
   width: 100%;
