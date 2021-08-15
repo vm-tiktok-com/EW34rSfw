@@ -1,6 +1,7 @@
 // We enclose this in window.onload.
 // So we don't have ridiculous errors.
 window.onload = function() {
+  document.firstElementChild.style.zoom = "reset";
   // Initialize Firebase
   var firebaseConfig = {
     apiKey: "AIzaSyAvCcIJW4yS1i3mcVSMlsXCNHEm5PJLoJk",
