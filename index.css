@@ -2,10 +2,10 @@
 .css-selector {
     background: linear-gradient(318deg, #3a4ea1, #c8ca68, #42b0a7, #6a2e9b);
     background-size: 800% 800%;
-    -webkit-animation: AnimationName 49s ease infinite;
-    -moz-animation: AnimationName 49s ease infinite;
-    -o-animation: AnimationName 49s ease infinite;
-    animation: AnimationName 49s ease infinite;
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    -o-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -30,10 +30,9 @@
 }
 body{
   /* https://www.color-hex.com/color/d3d3d3 */
-  background-color: black; /*#f6f6f6, EBEBD3, fafafa*/
+  background-color: black; /#f6f6f6, EBEBD3, fafafa/
   font-family: Bungee Outline;
   font-weight: 600;//900
-
   overflow: hidden;
   animation: blur 0.5s ease-out;
 
@@ -70,7 +69,7 @@ body{
 }
 #title{
   display: inline-block;
-  color: gray;/*EBEBD3, C5283D*/
+  color: gray;/EBEBD3, C5283D/
   font-size: 55px;
   letter-spacing: 2px;
   user-select: none;
@@ -86,16 +85,21 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-
+  align-content: center;
   float: left;
-  margin-top: 80px;
+  margin-top: 40px;
 
 }
 #join_inner_container{
-  width: 50%;
+  width: 70%;
   height: 100%;
+  justify-items: center;
   background-color: white;
   border-radius: 20px;
+  align-items: center;
+  align-content: center;
+  animation: blur 0.5s ease-out;
+  animation: fadeIn 1s linear;
 }
 #join_input_container{
   width: 100%;
@@ -118,7 +122,6 @@ body{
   text-align: center;
   background-color: Transparent;
   border-bottom: 2px solid #1D3354;
-
 }
 #join_input:focus{
   box-shadow: 0 10px 30px -17px #1D3354;
@@ -130,8 +133,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-
   float: left;
+
 }
 #join_button{
   width: 60%;
@@ -142,12 +145,12 @@ body{
   font-weight: bold;
   text-align: center;
   color: white;
-  background-color: black;
-  opacity: 50%;
+  background-color: #58AAFF;
+  opacity: 20%;
 }
 
 #join_button.enabled{
-  opacity: 100%;
+  opacity: 50%;
 }
 
 #chat_container{
@@ -159,13 +162,14 @@ body{
   justify-content: center;
 
   float: left;
-  margin-top: 40px;
+  margin-top: 5%;
   /* Fade in container */
+  animation: blur 0.5s ease-out;
   animation: fadeIn 1s linear;
 }
 #chat_inner_container{
-  width: 43%;
-  height: 110%;
+  width: 80%;
+  height: 80%;
   background-color: black;
   border-radius: 20px;
   opacity: 70%;
@@ -217,7 +221,10 @@ body{
   font-size: 18px;
   background-color: Transparent;
   text-align: center;
-  color: Transparent;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
 }
 #chat_input_send.enabled{
   color: black;
@@ -246,6 +253,7 @@ body{
   border-radius: 10px;
   font-weight: bold;
   font-size: 15px;
+  margin-bottom: 10px;
 }
 #chat_logout:hover{
   text-decoration: underline;
@@ -253,11 +261,12 @@ body{
   font-size: 15px;
   background-color: gray;
   opacity: 70%;
+  margin-bottom: 10px;
 }
 .message_container{
   width: 100%;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
 }
 .message_inner_container{
@@ -272,7 +281,7 @@ body{
 }
 .message_user{
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12px;
   color: white;
   margin-left: 10px;
   font-family: 'Roboto', sans-serif;
@@ -286,19 +295,18 @@ body{
 }
 .message_content{
   font-weight: normal;
-  font-size: 18px;
+  font-size: 12px;
   margin-top: 5px;
   background-color: gray;
   border-radius: 20px;
   padding: 15px;
-
 }
 
 .enabled{
   transition: background-color 0.5s;
   color: black;
   opacity: 100%;
-  background-color: #D64045; /*#5B7553;*/
+  background-color: #D64045; /#5B7553;/
   cursor: pointer;
 }
 #title_container.chat_title_container{
