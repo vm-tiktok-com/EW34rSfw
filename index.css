@@ -248,6 +248,8 @@ body{
 }
 #chat_logout:hover{
   text-decoration: underline;
+  font-weight: bold;
+  font-size: 15px;
   background-color: gray;
   opacity: 70%;
 }
